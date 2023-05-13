@@ -4,183 +4,137 @@ import "./Footer.css";
 export function Footer() {
   return (
     <>
-      {/* Remove the container if you want to extend the Footer to full width. */}
-      <div className="container my-5">
-        <footer className="bg-primary text-center text-lg-start text-white">
-          {/* Grid container */}
-          <div className="container p-4">
-            {/*Grid row*/}
-            <div className="row my-4">
-              {/*Grid column*/}
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <div
-                  className="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto"
-                  style={{ width: 150, height: 150 }}
-                >
-                  <img
-                    src="https://mdbootstrap.com/img/Photos/new-templates/animal-shelter/logo.png"
-                    height={70}
-                    alt=""
-                    loading="lazy"
-                  />
+      <>
+        <section className="footer-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-3">
+                <h3 className="footer-title">
+                  <span className="footer-title-text">RetreatSanctuary</span>
+                  <span className="footer-title-underline" />
+                </h3>
+                <img
+                  className="logo"
+                  src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/Logo.jpeg?alt=media&token=43bdda53-a07b-45c7-9cf3-3aef8e017c3d"
+                  alt="logo"
+                />
+              </div>
+              <div className="col-md-3">
+                <h3 className="footer-title title-transparent">
+                  RetreatSanctuary
+                </h3>
+                <ul className="quick-link-list">
+                  <li>
+                    <Link to="/servicios"> Servicios</Link>
+                  </li>
+                  <li>
+                    <Link to="/sobrenosotros"> Sobre Nosotros</Link>
+                  </li>
+                  <li>
+                    <Link to="/contacto"> Contactenos</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <h3 className="footer-title title-transparent">
+                  RetreatSanctuary
+                </h3>
+                <ul className="quick-link-list">
+                  <li>
+                    <Link to="#"> Buscar</Link>
+                  </li>
+                  <li>
+                    <Link to="#"> T & Cs</Link>
+                  </li>
+                  <li>
+                    <Link to="#"> Privacidad</Link>
+                  </li>
+                  <li>
+                    <Link to="#"> Comunidad</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="col-md-3">
+                <h3 className="footer-title">
+                  <span className="footer-title-text"></span>
+                  <span className="footer-title-underline" />
+                </h3>
+                <p className="newsletter">Recibe Nuestras Noticias</p>
+                <form action="">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      className="form-control form-control-new"
+                      id="usr"
+                      name="username"
+                      placeholder="Ingresa tu Email"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="btn btn-success subscribe btn-sm"
+                  >
+                    Ingresar
+                  </button>
+                </form>
+                <div id="social">
+                  <Link to="https://es-la.facebook.com/" target="_blank">
+                    <img
+                      className="btnfacebook"
+                      src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/facebook.png?alt=media&token=8e0df7ee-e5c2-4592-ac09-f46b521194d8"
+                      alt=""
+                    />
+                  </Link>
+                  <Link to="https://www.instagram.com/" target="_blank">
+                    <img
+                      className="btninstagram"
+                      src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/instagram.png?alt=media&token=cc990c43-592e-4ea1-8d59-85b933bf972d"
+                      alt=""
+                    />
+                  </Link>
+                  <Link to="https://twitter.com/" target="_blank">
+                    <img
+                      className="twiter"
+                      src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/twiter.png?alt=media&token=2454e37f-5b10-4c69-a812-be9daf8ff973"
+                      alt=""
+                    />
+                  </Link>
+                  <Link to="https://www.youtube.com/" target="_blank">
+                    <img
+                      className="youtube"
+                      src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/youtube.png?alt=media&token=4bd248bc-a54e-4f11-8a47-5c238a78f3e2"
+                      alt=""
+                    />
+                  </Link>
+                  <Link to="https://www.snapchat.com/es" target="_blank">
+                    <img
+                      className="snapchat"
+                      src="https://firebasestorage.googleapis.com/v0/b/retreatsanctuary-379f9.appspot.com/o/snapchat.png?alt=media&token=da82ad47-7abc-4867-92e0-f5396a88e555"
+                      alt=""
+                    />
+                  </Link>
                 </div>
-                <p className="text-center">
-                  Homless animal shelter The budgetary unit of the Capital City
-                  of Warsaw
-                </p>
-                <ul className="list-unstyled d-flex flex-row justify-content-center">
-                  <li>
-                    <a className="text-white px-2" href="#!">
-                      <i className="fab fa-facebook-square" />
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-white px-2" href="#!">
-                      <i className="fab fa-instagram" />
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-white ps-2" href="#!">
-                      <i className="fab fa-youtube" />
-                    </a>
-                  </li>
-                </ul>
               </div>
-              {/*Grid column*/}
-              {/*Grid column*/}
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase mb-4">Animals</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      When your pet is missing
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Recently found
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      How to adopt?
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Pets for adoption
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Material gifts
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Help with walks
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Volunteer activities
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {/*Grid column*/}
-              {/*Grid column*/}
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase mb-4">Animals</h5>
-                <ul className="list-unstyled">
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      General information
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      About the shelter
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Statistic data
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Job
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Tenders
-                    </a>
-                  </li>
-                  <li className="mb-2">
-                    <a href="#!" className="text-white">
-                      <i className="fas fa-paw pe-3" />
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              {/*Grid column*/}
-              {/*Grid column*/}
-              <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
-                <h5 className="text-uppercase mb-4">Contact</h5>
-                <ul className="list-unstyled">
-                  <li>
-                    <p>
-                      <i className="fas fa-map-marker-alt pe-2" />
-                      Warsaw, 57 Street, Poland
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <i className="fas fa-phone pe-2" />+ 01 234 567 89
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      <i className="fas fa-envelope pe-2 mb-0" />
-                      contact@example.com
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              {/*Grid column*/}
             </div>
-            {/*Grid row*/}
           </div>
-          {/* Grid container */}
-          {/* Copyright */}
-          <div
-            className="text-center p-3"
-            style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-          >
-            © 2020 Copyright:
-            <a className="text-white" href="https://mdbootstrap.com/">
-              MDBootstrap.com
-            </a>
+        </section>
+
+        <section className="footer-section-bottom">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6 footer-bottom-left">
+                <p>© Todos los Derechos Reservados</p>
+              </div>
+              <div className="col-md-6 footer-bottom-right">
+                <p>
+                  Desarrollado por: Julian Correa / Juan / Sofia / Esteban /
+                  Naren /<Link to="/"> RetreatSanctuary</Link>
+                </p>
+              </div>
+            </div>
           </div>
-          {/* Copyright */}
-        </footer>
-      </div>
-      {/* End of .container */}
+        </section>
+      </>
     </>
   );
 }
